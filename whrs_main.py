@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 # Saturated steam for the ship's services
 m_s_heating_services = 1400 # kg/h
-L_tg_rated = 800   # Turbogenerator rated electric load (kW)  - max 1000
+L_tg_rated = 800   # Turbogenerator rated electric load (kW)  - max 2000
 
 # Fuel Composition 
 c = 0.86           # carbon mass fraction kg C/kg fuel 
@@ -50,7 +50,7 @@ p_c = 0.075         # pressure of condenser in bar (recommended values 0.05-0.08
 #---------- 2: Pressure drops (User Input) ---------------------#
 Dp_ec = 0.03*p_d;     # pressure drop in the economizer section (bar)
 Dp_sh = 0.05*p_d;     # steam pressure drop in boiler superheater piping (2.5# SNAME 3-49, 5# Dzida 2009, 7# Ioannides 1984)
-Dp_ev = 0.15*p_d;     # pressure drop in the evaporator section 15-20# of drum pressure (bar)
+Dp_ev = 0.15*p_d;     # pressure drop in the evaporator section 15-20% of drum pressure (bar)
 Dp_cond = p_fw - p_c  # pressure increase in condensate water pump in bar
 
 #---------- 3: Calculated pressures ----------------------------#
